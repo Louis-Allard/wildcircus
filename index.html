@@ -1,0 +1,285 @@
+<!-- Afin de valider ton code HTML, clic sur la petite flèche en haut à droite de cette fenêtre. Pour rappel, tu peux jeter un oeil par ici pour en savoir un peu plus: https://blog.codepen.io/2017/10/11/analyze-css-now-using-stylelint/ -->
+<head>    
+  <meta charset="UTF-8">  
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet"> 
+  <title>Wild Circus</title>
+  <style>
+  /* Afin de valider ton code CSS, clic sur la petite flèche en haut à droite de cette fenêtre. Pour rappel, tu peux jeter un oeil par ici pour en savoir un peu plus: https://blog.codepen.io/2017/10/11/analyze-css-now-using-stylelint/ */
+/* Ecris ici ton code CSS */
+
+body {
+	font-family: 'Amatic SC', cursive;
+	font-size: 25px;
+}
+/* header title */
+
+header {
+  background-image : url('https://media.rtl2.fr/cache/HVMscGoSUx1pDPglkxOGPw/880v587-0/online/image/2016/1205/7786128874_varekai-le-cirque-du-soleil-a-lille.png'); 
+  height : 300px;
+}
+section {
+  background-color : #EFEFEF;
+}
+h1 {
+	font-size: 50px;
+	text-shadow: -1px -1px orange, 1px 1px grey, -3px 0 4px #000;
+	color: red;
+	padding: 16px;
+	text-align: center;
+	display: block;
+	margin: 16px;
+}
+/* vertical lines */
+.left-line {
+	width: 7px;
+	height: 35px;
+	display: block;
+	float: left;
+	background-color: orange;
+	margin-right: 3px;
+}
+/* top menu */
+#menu {
+	text-align: center;
+  background-color :#E1E0DE;
+  height : 50px;
+  padding-top : 10px;
+}
+#menu li {
+	list-style-type: square;
+	display: inline;
+	margin-right: 20px;
+	margin-left: 20px;
+	font-size: 25px;
+  font-weight : bold;
+}
+#menu li:hover {
+  background-color : #EFEFEF;
+  padding : 10px;
+}
+h2, h3 {
+  font-size : 30px;
+  color : orange;
+  font-weight : bold;
+}
+/* menu on the horizontal */
+#inline li {
+	list-style: none;
+  color : white;
+}
+#inline {
+	column-count: 3;
+  background-image : url('http://www.zoomsurlille.fr/wp-content/uploads/2017/03/cirque_arlette_gruss2017_r06.jpg');
+  height : 300px;
+  padding-top : 30px;
+}
+h3 {
+	margin-top: 0px;
+	margin-left: 25%;
+}
+/* About us menu */
+.container-img {
+  width : 33%;
+  height : 250px;
+  display:inline-block;
+}
+.textimg {
+  z-index : 2;
+  position : absolute;
+  text-align : center;
+  width : 33%;
+  padding-top : 30px;
+  color : white;
+}
+.img {
+  height : 230px;
+  width : 33%;
+  z-index : 1;
+  position : absolute;
+  opacity: 0.9; 
+}
+/* prices array */
+table {
+	width: 80%;
+	border: medium solid orange;
+	text-align: center;
+  margin : 0 auto;
+}
+.head {
+	font-weight: bold;
+}
+td {
+	border: 1px solid orange;
+	padding: 10px;
+}
+/* contact us form */
+fieldset {
+	padding: 0 20px 20px 20px;
+	margin-bottom: 10px;
+	border: 1px solid grey;
+	width: 200px;
+  margin : 0 auto;
+}
+label {
+	margin-top: 10px;
+	display: block;
+}
+label.inline {
+	display: inline;
+	margin-right: 50px;
+}
+textarea {
+	margin-bottom: 15px;
+	box-shadow: 1px 1px 1px grey;
+	padding: 10px;
+}
+legend {
+	font-weight: bold;
+}
+input {
+	cursor: pointer;
+	box-shadow: 1px 1px 1px grey;
+	padding: 10px;
+}
+footer {
+  text-align : center;
+}
+  </style>
+</head>
+<body>    
+  <header>
+    <h1>Wild Circus</h1>      
+      <nav>        
+        <ul id="menu">            
+        <!-- TODO: Les liens du menu doivent nous emmener vers les sections correspondantes dans la page -->          
+          <li>
+            <a href="#performances">Performances</a>
+          </li> |           
+          <li>
+            <a href="#aboutus">About Us</a>
+          </li> |           
+          <li>
+            <a href="#prices">Prices</a>
+          </li> |           
+          <li>
+            <a href="#contactus">Contact</a>
+          </li>        
+        </ul>      
+      </nav>    
+  </header>    
+  <section>       
+    <div class="left-line">
+    </div>      
+    <h2 id="#performances">Performances</h2>      
+    <!-- TODO: En utilisant du css place ces trois performances ("lough", "dream, "marvel at") sur la même ligne en enlevant le point généré par la balise "li". Attention, utilise bien le css pour aligner les éléments, tu ne dois pas enlever les balises "li"-->      
+    <ul id="inline">        
+      <!-- performance 1 -->        
+      <li>
+        <h3>Laugh</h3>            
+        <p>As an adult, come and discover our irresistible clowns, between practical jokes and pranks let yourself be carried away by their joy and fall back into childhood.
+        </p> 
+      </li>        
+      <!-- performance 2 -->         
+      <li>
+        <h3>Dream</h3>            
+        <p>Let yourself be carried away in a world where the real and the imaginary are one, in the company of our talented magicians, discover a wonderful world limited only by your imagination.
+        </p> 
+      </li>         
+      <!-- performance 3 -->         
+      <li>
+        <h3>Marvel at</h3>            
+        <p>Tame the untameable in the company of our tamers, between roar and razor-sharp claws, watch these fierce felines turn into sweet kittens. 
+        </p>                  
+      </li>      
+    </ul>    
+  </section>    
+  <hr />    
+  <section>       
+    <div class="left-line">
+    </div>           
+    <h2 id="aboutus">About Us</h2>      
+    <!-- TODO: Cette section n'a pas encore été réalisée, tu as carte blanche pour nous montrer ta créativité --> 
+    <div class="container-img">
+      <img src="http://ekladata.com/T4NE-lhC4lXE0LVtPAWWGWVe8wY.jpg" title="old fashioned way" alt="old fashioned way" class="img" />
+      <p class="textimg">
+        <b>Wild Circus</b> was founded 1 years ago by 
+        <a href="https://wildcodeschool.fr/" target="_blank">Wild Code School</a> funders. After their <i>learning adventure</i>, they wanted to enjoy people using an other way.
+      </p>
+    </div>
+    
+    <div class="container-img">
+      <img src="http://www.vso.fr/wp-content/uploads/2015/01/chapiteau-vso-cirque-pinder-460x300.jpg" title="old fashioned way" alt="old fashioned way" class="img" />
+      <p class="textimg">
+      See our attractive prices and join to see the best entertainment ever !
+      </p>
+    </div>    
+    
+    <div class="container-img">
+      <img src="http://cheval-facile.com/wp-content/uploads/2014/08/piste-cirque-gruss.jpg" title="old fashioned way" alt="old fashioned way" class="img" />
+      <p class="textimg">
+      The enchanting shows follow each other but are never alike. Only excellence continues. The masters of the place watch over it; they are committed to always rhyming excellence with elegance and flamboyance!
+      </p>
+    </div>  
+  </section>    
+  <hr />    
+  <section>      
+    <div class="left-line">
+    </div>      
+    <h2 id="prices">Prices</h2>      
+    <!-- TODO:  Réalise un tableau qui présente les différents prix. Exemple (aggrandis la fenêtre en largeur pour bien voir l'exemple ci-dessous) :
+                                    | Adultes | Enfants de moins de 12 ans | Groupes (plus de 10 personnes) | Ecoles
+            Semaines hors mercredi  |         |                         |                                |
+            week-end et mercredi    |         |                         |                                |
+          -->           
+    <table>      
+     <tr class="head">
+      <td>Adults</td>
+      <td>Children under 12</td>
+      <td>In a group (more than 10)</td>
+      <td>Schools</td>      
+     </tr>      
+     <tr>
+       <td>Week out of wednesday</td>
+       <td>10€</td>
+       <td>8€</td>
+       <td>6€</td>      
+      </tr>       
+      <tr>
+        <td>Weekend and wednesday</td>
+        <td>15€</td>
+        <td>13€</td>
+        <td>11€</td>      
+      </tr>          
+    </table>    
+  </section>    
+  <hr />    
+  <section>      
+    <div class="left-line">
+    </div>      
+    <h2 id="contactus">Contact Us</h2>      
+    <!-- TODO: Réalise un formulaire de contact avec les champs email et message plus un bouton pour envoyer le message. Pense bien à ajouter les labels pour les différents champs
+            Ce formulaire n'a pas besoin d'être fonctionnel, réalise juste la mise en forme.
+          -->      
+    <form action="" method="">          
+      <fieldset>            
+        <legend>Send your message</legend>            
+        <label for="email">Email :</label>            
+        <input type="text" size="105px" id="email" /><br />            
+        <label for="message">Message :</label>            
+        <textarea name="comments" cols="82" rows="5" id="message" name="msg"></textarea> <br />            
+        <input type ="submit" value="Submit" />            
+        <input type ="reset" value="Cancel" />          
+      </fieldset>         
+    </form>    
+  </section>    
+  <footer>      
+    <!-- TODO: Entre ton nom et prénom.
+            Mets en place un lien vers le site de la Wild Code School (https://wildcodeschool.fr).
+            Tu peux egalement mettre un lien sur ton nom vers ton site, ton blog ou ton profil github ou linkedin, si tu en a un.
+           -->      
+  <p>
+    <a href="https://wildcodeschool.fr" target="_blanck">Wild Circus</a> by Louis Allard - France-IOI : 
+    <a href="http://www.france-ioi.org/user/perso.php?sLogin=lallard" target="_blank">Profile</a> - 2018 September 19th
+  </p>    
+  </footer>
+</body>
